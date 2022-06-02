@@ -12,3 +12,4 @@
 * Numpy.ipynb <span style="color: #0000FF"> Numpy库的例子 </span>
 * Pandas.ipynb <span style="color: #0000FF"> Pandas库的例子</span>
 * DataVisuallization.ipynb <span style="color: #0000FF">数据可视化，matplotlib库的例子</span>
+* Regression.ipynb <span style="color: #0000FF">回归分析</span>
