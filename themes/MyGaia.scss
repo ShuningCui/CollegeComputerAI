@@ -1,0 +1,413 @@
+/* @theme MyGaia */
+
+@charset "UTF-8";
+@import 'gaia';
+
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  color: purple;
+}
+
+img {
+  max-width: 95%;
+  border-radius: 8px;
+  margin: auto;
+}
+
+img[alt*='#l'] {
+  float: left;
+}
+
+img[alt*='#r'] {
+  float: right;
+}
+
+img[alt*='#c'] {
+  display: block;
+  margin: auto;
+}
+
+blockquote {
+  border-left: 5px solid #007BFF;
+  padding-left: 20px;
+  margin: 1em 0;
+  position: relative;
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+    bottom: 0;
+  }
+
+  >*:first-child {
+    margin-top: 0;
+  }
+}
+
+section.cols-2 {
+  overflow: visible;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "slideheading slideheading"
+    "leftpanel    rightpanel";
+}
+
+section.cols-2 h2,
+section.cols-2 h3 {
+  grid-area: slideheading;
+}
+
+section.cols-2 .ldiv {
+  grid-area: leftpanel;
+  margin-top: -5%;
+}
+
+section.cols-2 .rdiv {
+  grid-area: rightpanel;
+  margin-top: -5%;
+}
+
+section.cols-2 .limg {
+  grid-area: leftpanel;
+  margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-2 .rimg {
+  grid-area: rightpanel;
+  margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-3 {
+  overflow: visible;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "slideheading slideheading slideheading"
+    "leftpanel    middlepanel  rightpanel";
+}
+
+section.cols-3 h2,
+section.cols-3 h3 {
+  grid-area: slideheading;
+}
+
+section.cols-3 .ldiv {
+  grid-area: leftpanel;
+  margin-top: -5%;
+}
+
+section.cols-3 .mdiv {
+  grid-area: middlepanel;
+  margin-top: -5%;
+}
+
+section.cols-3 .rdiv {
+  grid-area: rightpanel;
+  margin-top: -5%;
+}
+
+section.cols-3 .limg {
+  grid-area: leftpanel;
+  margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-3 .mimg {
+  grid-area: middlepanel;
+  margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-3 .rimg {
+  grid-area: rightpanel;
+  margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-2-73 {
+  overflow: visible;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "slideheading slideheading"
+    "leftpanel    rightpanel";
+}
+
+section.cols-2-73 h2,
+section.cols-2-73 h3 {
+  grid-area: slideheading;
+}
+
+section.cols-2-73 .ldiv {
+  grid-area: leftpanel;
+  margin-top: -2%;
+}
+
+section.cols-2-73 .rdiv {
+  grid-area: rightpanel;
+  margin-top: -2%;
+}
+
+section.cols-2-73 .limg {
+  grid-area: leftpanel;
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-2-73 .rimg {
+  grid-area: rightpanel;
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-2-64 {
+  overflow: visible;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "slideheading slideheading"
+    "leftpanel    rightpanel";
+}
+
+section.cols-2-64 h2,
+section.cols-2-64 h3 {
+  grid-area: slideheading;
+}
+
+section.cols-2-64 .ldiv {
+  grid-area: leftpanel;
+  margin-top: -2%;
+
+}
+
+section.cols-2-64 .rdiv {
+  grid-area: rightpanel;
+  margin-top: -2%;
+}
+
+section.cols-2-64 .limg {
+  grid-area: leftpanel;
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-2-64 .rimg {
+  grid-area: rightpanel;
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-2-37 {
+  overflow: visible;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "slideheading slideheading"
+    "leftpanel    rightpanel";
+}
+
+section.cols-2-37 h2,
+section.cols-2-37 h3 {
+  grid-area: slideheading;
+}
+
+section.cols-2-37 .ldiv {
+  grid-area: leftpanel;
+  margin-top: -2%;
+}
+
+section.cols-2-37 .rdiv {
+  grid-area: rightpanel;
+  margin-top: -2%;
+}
+
+section.cols-2-37 .limg {
+  grid-area: leftpanel;
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-2-37 .rimg {
+  grid-area: rightpanel;
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-2-46 {
+  overflow: visible;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "slideheading slideheading"
+    "leftpanel    rightpanel";
+}
+
+section.cols-2-46 h2,
+section.cols-2-46 h3 {
+  grid-area: slideheading;
+}
+
+section.cols-2-46 .ldiv {
+  grid-area: leftpanel;
+  margin-top: -2%;
+
+}
+
+section.cols-2-46 .rdiv {
+  grid-area: rightpanel;
+  margin-top: -2%;
+}
+
+section.cols-2-46 .limg {
+  grid-area: leftpanel;
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.cols-2-46 .rimg {
+  grid-area: rightpanel;
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.rows-2 {
+  overflow: visible;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 7% 45% 45%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "slideheading"
+    "toppanel"
+    "bottompanel";
+}
+
+section.rows-2 h2,
+section.rows-2 h3 {
+  grid-area: slideheading;
+}
+
+section.rows-2 .tdiv {
+  grid-area: toppanel;
+}
+
+section.rows-2 .bdiv {
+  grid-area: bottompanel;
+}
+
+section.rows-2 .timg {
+  grid-area: toppanel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.rows-2 .bimg {
+  grid-area: bottompanel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.pin-3 {
+  overflow: visible;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 7% 42% 48%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "slideheading slideheading"
+    "toppanel  toppanel"
+    "leftpanel rightpanel";
+}
+
+section.pin-3 h2,
+section.pin-3 h3 {
+  grid-area: slideheading;
+}
+
+section.pin-3 .tdiv {
+  grid-area: toppanel;
+}
+
+section.pin-3 .ldiv {
+  grid-area: leftpanel;
+}
+
+section.pin-3 .rdiv {
+  grid-area: rightpanel;
+}
+
+section.pin-3 .timg {
+  grid-area: toppanel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.pin-3 .limg {
+  grid-area: leftpanel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.pin-3 .rimg {
+  grid-area: rightpanel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
