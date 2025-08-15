@@ -11,7 +11,7 @@ paginate: true
 
 ### **安装Python解释器**
 
-> Python 是一种解释型语言，代码需要通过 Python 解释器来逐行读取、分析并执行。解释器就像翻译官，能将人类可读的Python代码转换为计算机可执行的机器语言指令。没有Python解释器，计算机无法识别和运行 Python 代码。
+> Python 是一种解释型语言，代码需要通过 Python 解释器来逐行读取、分析并执行。解释器就像翻译官，能将人类可读的Python代码转换为计算机可执行的机器语言指令。没有Python解释器，计算机无法识别和运行 Python代码。
 
 ---
 
@@ -21,8 +21,7 @@ paginate: true
 
 - 打开浏览器，访问 Python 官方网站（<https://www.python.org/> ）。
 
-- 在首页点击 "Downloads"，选择适合你系统版本（32 位或 64 位）的 Python
-  安装包下载。
+- 在首页点击 "Downloads"，选择适合你系统版本（32 位或 64 位）的 Python安装包下载。
 
 ---
 ### **Windows 系统**
@@ -37,8 +36,7 @@ paginate: true
 ---
 
 ### **Windows 系统**
-3.  **验证安装**：打开命令提示符（Win + R，输入 "cmd" 回车），输入
-    "python --version"，如果能正确显示 Python 版本号，说明安装成功。
+3.  **验证安装**：打开命令提示符（Win + R，输入 "cmd" 回车），输入"python --version"，如果能正确显示 Python 版本号，说明安装成功。
 
 ---
 
@@ -63,7 +61,7 @@ paginate: true
 
 ### **VSCode的安装**
 
-> 有很多方法可以在 Python 中运行和开发代码。可以从命令行运行 Python解释器，并使用内置shell进行交互，也可以在文本编辑器中编写代码。还可以使用面向教育的集成开发环境（IDE），如IDLE（随 Python 提供）、Mu 或 Thonny，或者选择更高级的 Python IDE，如VSCode、Wingware 或PyCharm。*本书使用VSCode*进行教学，读者也可以选择自己熟悉的环境。
+> 有很多方法可以在 Python 中运行和开发代码。可以从命令行运行 Python解释器，并使用内置shell进行交互，也可以在文本编辑器中编写代码。还可以使用面向教育的集成开发环境（IDE），如IDLE（随 Python 提供）、Mu 或 Thonny，或者选择更高级的 Python IDE，如VSCode、Wingware或PyCharm。*本书使用VSCode*进行教学，读者也可以选择自己熟悉的环境。
 
 **visual Studio Code**
 (VSCode)是微软为Windows、Linux和macOS创建的开源代码编辑器。VSCode支持调试、语法高亮、自动代码补全、代码片段、代码重组和嵌入式Git。
