@@ -206,7 +206,7 @@ pip install numpy
 >特别提示：
 pip将从默认的服务器上下载python包并安装。默认的服务器有时受网络的影响，可能会安装失败。这时可以指定一个下载源，例如清华大学提供的下载服务，要指定下载源，可以使用如下的命令：
 ```cmd
-PS C:\\Users\\cuish\> **pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 ---
 
