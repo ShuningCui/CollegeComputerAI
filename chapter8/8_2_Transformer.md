@@ -66,8 +66,8 @@ paginate: true
 
 下面举一个简单的例子。假设有下面2个句子：
 
-> Rabbit ate the carrot because it was hungry.Rabbit ate the carrot
-> because it was tasty.
+> Rabbit ate the carrot because it was hungry.
+> Rabbit ate the carrot because it was tasty.
 
 ---
 
