@@ -8,4 +8,4 @@
 
 
 number = int(input())
-print("{:,}".format(number))
+print(f"{number:,}")
