@@ -15,3 +15,4 @@ def encoder(x,n):
 string, str_n = input().split()
 n = int(str_n)%26
 print(''.join([encoder(x,n) if x.isalpha() else x for x in string ]))
+
