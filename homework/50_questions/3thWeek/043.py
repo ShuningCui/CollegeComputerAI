@@ -11,7 +11,8 @@ f=2
 while n>1:
     if n%f==0:
         prime_factor.append(f)
-        n//=f
+        n = n//f
+        # print(f'n={n},f={f}')
     else:
         f+=1
 print('*'.join(str(p) for p in prime_factor))

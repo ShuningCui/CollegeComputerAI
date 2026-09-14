@@ -10,8 +10,8 @@
 # 17 contains 7
 
 
-num = [int(x) for x in input().split()]
-for i in range(num[0], num[1]+1):
+m,n = [int(x) for x in input().split()]
+for i in range(m, n+1):
     if i%7==0:
         print(f"{i} is a multiple of 7")
     if "7" in str(i):

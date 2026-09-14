@@ -9,11 +9,15 @@
 
 
 def ispalindrome(n):
-    return str(n) == str(n)[::-1]
-
+    if str(n) == str(n)[::-1]:
+        return True
+    else:
+        return False
+     
 n = int(input())
 ispalindrome_number = []
 for i in range(1000, n+1):
-    if ispalindrome(i):
+    if ispalindrome(i) == True:
         ispalindrome_number.append(i)
 print(*ispalindrome_number)
+

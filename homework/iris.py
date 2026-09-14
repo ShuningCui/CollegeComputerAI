@@ -4,6 +4,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -108,7 +109,7 @@ def train(model, train_loader, test_loader, optimizer, loss_fn, epochs):
 
 model = Classification()
 loss = nn.CrossEntropyLoss()
-lr = 0.0002
+lr = 0.004
 optimizer = optim.Adam(model.parameters(), lr=lr)
 epochs = 100
 train_losses, val_losses = train(model, train_loader, test_loader, optimizer, loss, epochs)
